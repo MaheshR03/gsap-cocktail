@@ -15,6 +15,10 @@
     --font-serif: "DM Serif Text", serif;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 html,
 body {
     width: 100%;
@@ -65,7 +69,7 @@ body {
     }
 
     nav {
-        @apply fixed z-50 w-full;
+        @apply fixed z-50 max-w-screen-xl left-1/2 -translate-x-1/2 px-2 w-full overflow-x-hidden;
 
         div {
             @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
